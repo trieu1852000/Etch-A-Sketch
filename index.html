@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1 class="title">Etch A Sketch</h1>
+    <div class="container">
+        <button class="reset">Reset</button>
+        <button class="black">Black</button>
+        <button class="RGB">RGB</button>
+        <div class="colorAndPromt">
+            <input type="color" class="color">
+            <p>CHOOSE YOUR COLOR</p>
+        </div>
+        <div class="sliderAndValue">
+            <input type="range" min="2" max="100" value="10" id="slider">
+            <p class="value">10</p>
+        </div>
+    </div>
+    <div class="grid"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
