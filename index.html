@@ -9,21 +9,24 @@
     
 </head>
 <body>
-    <h1 class="title">Etch A Sketch</h1>
+    <h1 id='title' class="title">Etch A Sketch</h1>
+<!--create a container have a reset, black, RGB button.-->
     <div class="container">
-        <button class="reset">Reset</button>
-        <button class="black">Black</button>
-        <button class="RGB">RGB</button>
+        <button class="reset" id="reset">Reset</button>
+        <button class="black" id="black">Black</button>
+        <button class="rgb" id="rgb">RGB</button>
+        <!--Inside the container will have a color and Promt-->
         <div class="colorAndPromt">
-            <input type="color" class="color">
+            <input type="color" id="color"> 
             <p>CHOOSE YOUR COLOR</p>
         </div>
         <div class="sliderAndValue">
-            <input type="range" min="2" max="100" value="10" id="slider">
+            <input type="range" min="2" max="100" value="16" id="slider">
             <p class="value">10</p>
         </div>
     </div>
     <div class="grid"></div>
     <script src="scripts.js"></script>
+    <footer>Made by: <a href="https://github.com/trieu1852000"><img id="logo" src = "githublogo.png"/>Van Phan</a></footer>
 </body>
 </html>

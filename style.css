@@ -36,9 +36,95 @@ button{
     text-shadow: 2px 2px white;
     font-style: italic;
 }
-.color{
+#color{
     margin-top:5px;
     width: 100px;
     height: 25px;
    
+}
+#color:hover{
+    transform: scale(1.1);
+}
+#color:active{
+    transform: scale(1.2);
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+button:active{
+    transform: scale(1.2);
+}
+.rgb{
+    background: linear-gradient(to right, rgb(241, 11, 11),rgb(202, 51, 31),rgb(218, 136, 29) );
+    color: white;
+}
+
+.sliderAndValue{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#slider{
+    background: black;
+    outline: none;
+    border: 50px;
+}
+#slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 50px;
+}
+#slider::-moz-range-thumb{
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 5
+}
+
+.value{
+    font-size: 30px;
+    color: red;
+    text-shadow: 2px 2px white;
+}
+
+.grid{
+    margin-top: 50px;
+    display: inline-grid;
+    grid-template-columns: repeat(10,2fr);
+    grid-template-rows: repeat(10, 2fr);
+    border:5px solid white;
+    border-radius:5px;
+    height:700px;
+    width: 700px;
+    background-color: gray;
+    box-shadow: 10px 10px;
+}
+.cell{
+    background-color: white;
+    border:1px solid black;
+}
+
+footer{
+    font-size: 25px;
+    bottom : 0;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    text-decoration: underline;
+}
+#logo{
+    width: 35px;
+    height: 35px;
+    margin-bottom: -9px;
+    margin-right: 10px;
 }
